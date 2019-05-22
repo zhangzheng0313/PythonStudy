@@ -156,4 +156,63 @@ for i in range(5):
 '''
 
 
-# 11、
+# 11、打印空心三角形
+'''
+for i in range(5):
+    for j in range(i + 1):
+        if i == 4:
+            print("* ", end="")
+            continue
+        if j == 0 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+'''
+
+
+# 12、打印倒立三角
+'''
+for i in range(5):
+    for j in range(5 - i):
+        print("* ", end="")
+    print()
+'''
+
+
+# 13、打印倒空三角
+'''
+for i in range(5):
+    for j in range(5 - i):
+        if i == 0:
+            print("* ", end="")
+            continue
+        if j == 0 or j == 5-i-1:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+'''
+
+
+# 14、打印正三角形
+'''
+for i in range(5):
+    for j in range(5-i):
+        print(" ", end="")
+    for m in range(i+1):
+        print("* ", end="")
+    print()
+'''
+
+
+# 15、打印空三角
+for i in range(1, 6):
+    for k in range(1, 6-i):
+        print(" ", end="")
+    for j in range(6-i, 6):
+        if i == 5 or j == 6-i or j == 5:
+            print("* ", end="")
+        else:
+            print(" ", end=" ")
+    print()
