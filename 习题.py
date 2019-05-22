@@ -82,3 +82,21 @@ print(z)
 '''
 
 
+'''
+7.验证用户密码，用户只有三次输入机会不过用户输入内容包括“*”则不计算在内
+password = "123456"
+times = 3
+while times:
+    input_password = input("请输入密码：")
+    if '*' in input_password:
+        print("密码中不能包含“*”")
+    elif input_password == password:
+        print("密码正确")
+        break
+    else:
+        print("密码错误")
+        times = times - 1
+        print("你还有{0}次机会".format(times))
+    if times == 0:
+        print("三次机会已用完")
+'''
