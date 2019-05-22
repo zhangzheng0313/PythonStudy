@@ -140,4 +140,20 @@ for i in range(4):
 '''
 
 
-# 10、
+# 10、打印以下图形
+'''
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+'''
+'''
+for i in range(5):
+    for j in range(i + 1):
+        print("* ", end="")
+    print()
+'''
+
+
+# 11、
