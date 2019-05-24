@@ -207,6 +207,7 @@ for i in range(5):
 
 
 # 15、打印空三角
+'''
 for i in range(1, 6):
     for k in range(1, 6-i):
         print(" ", end="")
@@ -216,3 +217,32 @@ for i in range(1, 6):
         else:
             print(" ", end=" ")
     print()
+'''
+
+
+# 16、求100-999之间所有的水仙花数（即一个3位数等于其各位数字的立方和）
+'''
+for i in range(100,1000):
+    temp = str(i)
+    a = int(temp[0])
+    b = int(temp[1])
+    c = int(temp[2])
+    if a**3 + b**3 + c**3 == i:
+        print(i)
+'''
+
+
+# 17、红黄蓝三色球，红球3个，黄球3个，绿球6个，从中任意摸出8个球，计算摸出求的各种颜色搭配
+'''
+for red in range(0,4):
+    for yellow in range(0,4):
+        for green in range(2,7):
+            if red + yellow + green == 8:
+                print("红球有{}个".format(red))
+                print("黄球有{}个".format(yellow))
+                print("绿球有{}个".format(green))
+                print("="* 10)
+'''
+
+
+# 18、
