@@ -2,11 +2,13 @@
 定义一个学生类
 '''
 class Student():
-    #一个空类
+    # 一个空类
     pass
 
-#定义一个对象
-zhaangzheng = Student()
+
+# 定义一个对象
+zhangzheng = Student()
+
 
 class PythonStudent():
     name = None
@@ -17,8 +19,12 @@ class PythonStudent():
         print("I do homework")
         return None
 
-#实例化
+
+# 实例化
 chenyi = PythonStudent()
 print(chenyi.name)
 print(chenyi.age)
 chenyi.doHomework()
+
+print(PythonStudent.__dict__)
+print(chenyi.name)

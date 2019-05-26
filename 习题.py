@@ -245,4 +245,35 @@ for red in range(0,4):
 '''
 
 
-# 18、
+# 18、登录注册
+'''
+user_pass = {"zhangzheng":"123", "chenyi":"123"}
+
+
+def creat_user(username, password):
+    usernames = user_pass.keys()
+    if username in usernames:
+        print("该用户名已经被注册")
+    else:
+        user_pass[username] = password
+        print("注册成功")
+
+
+# creat_user("ergou", 123)
+# print(user_pass)
+
+
+def login_user(username, password):
+    usernames = user_pass.keys()
+    if username not in usernames:
+        print("你还没有注册")
+    elif password != user_pass[username]:
+        print("密码错误")
+    else:
+        print("登录成功")
+
+
+login_user("chenyi", "123")
+'''
+
+
