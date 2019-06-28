@@ -1,5 +1,5 @@
 # 1、编写程序，要求用户输入1-100之间的整数并且判断，输入符合要求打印“正确”，否则打印“错误”
-'''
+"""
 temp = input("请输入一个1-100之间的整数：")
 if temp.isdigit():
     temp = int(temp)
@@ -9,8 +9,7 @@ if temp.isdigit():
         print("错误")
 else:
     print("错误")
-'''
-
+"""
 
 # 2、判定给定年份是否为闰年
 '''
@@ -277,3 +276,14 @@ login_user("chenyi", "123")
 '''
 
 
+# 19、汉诺塔
+'''
+def hanoi(n, a, b, c):
+    if n == 1:
+        print(a, '-->', c)
+    else:
+        hanoi(n - 1, a, c, b)
+        print(a, '-->', c)
+        hanoi(n - 1, b, a, c)
+hanoi(2, 'A', 'B', 'C')
+'''

@@ -1,10 +1,8 @@
-class A():
-    pass
-
-def say(self):
-    print("111")
-
-A.say = say
-a = A()
-a.say()
-
+def hanoi(n, a, b, c):
+    if n == 1:
+        print(a, '-->', c)
+    else:
+        hanoi(n - 1, a, c, b)
+        print(a, '-->', c)
+        hanoi(n - 1, b, a, c)
+hanoi(2, 'A', 'B', 'C')
